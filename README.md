@@ -19,5 +19,14 @@
 }
 ```
 
+## Configuration
+The plugin can be configured in `cfg/sourcemod/plugin.shavit-style-doublejump.cfg`.
+
+ConVar|Default Value|Description
+:-:|:-:|:-
+`ss_doublejump_specialstring`|`doublejump`|Special string value to use in shavit-styles.cfg, only change this if the default collides with another plugin.
+`ss_doublejump_max_double_jumps`|`1`|Maximum amount of jumps while mid-air after an initial jump.
+`ss_doublejump_force`|`290.0`|The amount of vertical boost to apply to a player when double jumping. This value is used to scale the player's vertical velocity and immitate a mid-air jump.
+
 ## Demo
 ![Demo](demo.gif)
