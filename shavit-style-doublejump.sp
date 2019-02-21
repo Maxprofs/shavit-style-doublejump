@@ -31,7 +31,7 @@ public Plugin myinfo = {
 	name = "[shavit-style] Double Jump",
 	author = "Adam & Chanz",
 	description = "Adds a custom double jump style to shavit's bhoptimer.",
-	version = "1.0",
+	version = "1.1",
 	url = "https://github.com/strafe/shavit-style-doublejump"
 }
 
@@ -74,7 +74,7 @@ public void Shavit_OnStyleChanged(int client, int oldstyle, int newstyle, int tr
 	char sStyleSpecial[sizeof(stylestrings_t::sSpecialString)];
 	Shavit_GetStyleStrings(newstyle, sSpecialString, sStyleSpecial, sizeof(sStyleSpecial));
 
-	g_bCanDoubleJump[client] = StrEqual(sStyleSpecial, g_sSpecialString);
+	g_bCanDoubleJump[client] = (StrContains(sStyleSpecial, g_sSpecialString) != -1);
 }
 
 /**
