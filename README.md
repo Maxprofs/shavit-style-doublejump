@@ -1,5 +1,5 @@
 # shavit-style-doublejump
-> ✈️ Adds a custom double jump style to shavit's bhoptimer.
+> 2️⃣ Double jump style for shavit's bhoptimer.
 
 ## Installation
 1. Download the latest version from the [releases page](https://github.com/strafe/shavit-style-doublejump/releases/latest) and add it to your server.
@@ -30,3 +30,9 @@ ConVar|Default Value|Description
 
 ## Demo
 ![Demo](demo.gif)
+
+## Credits
+[Chanz](https://github.com/chanz)
+
+## License
+[GPLv3](LICENSE)
